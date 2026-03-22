@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="icon/css/all.min.css">
+    <link rel="stylesheet" href="css/parsley.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="login-sec">
+        <div class="container">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-6 col-12 g-0">
+                    <div class="box1 text-start">
+                        <h1>Welcome</h1>
+                        <h2>Back</h2>
+                        <p>We’re happy to see you again! Sign in to continue.
+                            Access your dashboard, manage your account, and explore new features.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-12 g-0">
+                    <div class="box2 p-4  ">
+
+                        <h2 class="mb-4 text-center">Sign in</h2>
+
+                        <form action="" data-parsley-validate>
+
+                            <!-- Email -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address *</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email"
+                                    required>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password *</label>
+                                <input type="password" class="form-control" id="password"
+                                    placeholder="Enter your password" required>
+                            </div>
+
+                            <!-- Remember + Forgot -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="remember">
+                                    <label class="form-check-label" for="remember">
+                                        Remember me
+                                    </label>
+                                </div>
+
+                                <a href="#" class="text-decoration-none small">
+                                    Forgot Password?
+                                </a>
+                            </div>
+
+                            <!-- Button -->
+                            <button type="submit" class="btn btn-primary w-100 mb-3">
+                                Login
+                            </button>
+
+                            <!-- Sign up -->
+                            <p class="text-center mb-0">
+                                Don't have an account?
+                                <a href="#" class="text-decoration-none fw-semibold">Sign up</a>
+                            </p>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/parsley.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('form').parsley();
+        });
+    </script>
+</body>
+
+</html>
